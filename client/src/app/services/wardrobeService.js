@@ -7,6 +7,6 @@
   angular
     .module('client')
     .factory('Wardrobe', ['$resource', function($resource) {
-      return $resource('/api/wardrobe/:id', {id: '@id'});
+      return $resource('/rest/wardrobe/:id', {id: '@id'});
     }]);
 })();
