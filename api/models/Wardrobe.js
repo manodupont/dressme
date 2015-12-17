@@ -9,7 +9,14 @@ module.exports = {
 
   attributes: {
 
-
+    name: {
+      type: 'string',
+      size: 24
+    },
+    description: {
+      type: 'string',
+      size: 24
+    },
   }
 };
 
