@@ -1,9 +1,10 @@
-<div class="container">
-
+<div class="container" ng-controller="MainController">
   <div>
     <acme-navbar creation-date="main.creationDate"></acme-navbar>
   </div>
 
+  map : {{main.map}}
+  <ui-gmap-google-map center='main.map.center' zoom='main.map.zoom'></ui-gmap-google-map>
   <div class="jumbotron text-center">
     <h1>'Allo, 'Allo!</h1>
     <p class="lead">

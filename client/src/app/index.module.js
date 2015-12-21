@@ -2,6 +2,6 @@
   'use strict';
 
   angular
-    .module('client', ['ngResource', 'ngRoute', 'ui.bootstrap', 'toastr']);
+    .module('client', ['ngResource', 'ngRoute', 'ui.bootstrap', 'toastr', 'uiGmapgoogle-maps']);
 
 })();

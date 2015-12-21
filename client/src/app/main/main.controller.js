@@ -3,16 +3,15 @@
 
   angular
     .module('client')
-    .controller('MainController', MainController);
-
-  /** @ngInject */
-  function MainController($timeout, webDevTec, toastr) {
+    .controller('MainController', function MainController($timeout, webDevTec, toastr) {
     var vm = this;
 
     vm.awesomeThings = [];
     vm.classAnimation = '';
     vm.creationDate = 1450193424410;
     vm.showToastr = showToastr;
+
+    vm.map = {center: {latitude: 51.219053, longitude: 4.404418 }, zoom: 14 };
 
     activate();
 
@@ -35,5 +34,5 @@
         awesomeThing.rank = Math.random();
       });
     }
-  }
+  });
 })();
